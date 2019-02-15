@@ -6,6 +6,9 @@ echo "\n[archlinuxcn]\n\nSigLevel = Optional TrustedOnly\nServer=https://mirrors
 
 sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring;
 
-yay -Sy fcitx-sogoupinyin fcitx-im fcitx-configtool deepin.com.qq.office electronic-wechat deepin.com.thunderspeed google-chrome nutstore shadowsocks-qt5
+yay -Sy fcitx-sogoupinyin fcitx-im fcitx-configtool deepin.com.qq.office electronic-wechat deepin.com.thunderspeed google-chrome nutstore shadowsocks-qt5 wps-office ttf-wps-fonts;
 
-echo "export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=\"@im=fcitx\"" >> ~/.xprofile
+echo "export GTK_IM_MODULE=fcitx\nexport QT_IM_MODULE=fcitx\nexport XMODIFIERS=\"@im=fcitx\"" >> ~/.xprofile;
+
+cp -f ./user-dirs.dirs ~/.config/user-dirs.dirs;
+
